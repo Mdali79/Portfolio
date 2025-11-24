@@ -570,6 +570,45 @@ section {
     font-weight: 500;
 }
 
+.project-link {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.project-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.project-link-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+}
+
+.project-link-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.project-link-btn:hover svg {
+    transform: translate(2px, -2px);
+}
+
+.project-link-btn span {
+    display: inline-block;
+}
+
 /* Education Section */
 .education {
     background-color: var(--bg-primary);
